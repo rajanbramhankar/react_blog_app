@@ -8,7 +8,7 @@ const Block2 = (props) => {
         
         
          <div className='block_home' >
-              <img className='block_img_home' src={img} alt='error' />
+              <img className='block_img_home' src={img} alt='found' />
              <div className='bolly_container' >
              <h4 className='block_title_home' >{title}</h4>
               <p className='block_description_home' >{description}</p>
