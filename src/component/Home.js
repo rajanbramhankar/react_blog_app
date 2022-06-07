@@ -11,18 +11,17 @@ const Home = () => {
       <div className='home_top'>
 
         {response.filter((e) => (e.category === "Tourism" && e.id === "god")).map((c) => {
-          return (<img className='top_img_home' src={c.image} />)
+          return (<img className='top_img_home' src={c.image}  alt=""  />)
         })
         }
         <div className='Extra_div_home'>
           {response.filter((e) => (e.category === "Sports" && e.id === "35")).map((c) => {
-            return (<img className='top_img_home_1' src={c.image} />
+            return (<img className='top_img_home_1' src={c.image} alt="" />
             )
           })
           }
           {response.filter((e) => (e.category === "Technology" && e.id === "27")).map((c) => {
-            return (<img className='top_img_home_1' src={c.image}
-            />)
+            return (<img className='top_img_home_1' src={c.image} alt="" />)
           })
           }
         </div>
