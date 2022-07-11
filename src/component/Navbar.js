@@ -10,9 +10,9 @@ const Navbar = () => {
 
             <nav  className="navbar navbar-expand-lg">
                 <Link  className="navbar-brand" to="/"> <div className='the' >The</div> Siren</Link>
-                <button  className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                {/* <button  className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span  className="navbar-toggler-icon"></span>
-                </button>
+                </button> */}
                 <div  className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div  className="navbar-nav">
                         <Link  className="nav-item nav-link active" to="/home">Home</Link>

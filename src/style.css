@@ -105,3 +105,40 @@
 .blockhome_middle{
     display: flex;
 }
+
+
+/* Native */
+
+.Nmain div{
+    position: relative;
+    left: 350px;
+}
+.Ntitle{
+    font-size: 25px;
+    
+}
+
+.Nimg{
+    width: 300px;
+}
+
+.Ncategory{
+    font-size: 30px;
+
+}
+.Ndescription{
+    font-size: 25px;
+
+}
+
+.Ncontainer{
+    width: 50%;
+}
+
+.Nicon{
+    font-size: 25px;
+    display: flex;
+    align-content: flex-start;
+    margin-left: -200px;
+
+}

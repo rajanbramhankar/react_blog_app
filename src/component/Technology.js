@@ -12,7 +12,7 @@ const Technology = () => {
        <h1 className='heading_tourism' >Technology</h1>
    {response.filter((e)=> (e.category === "Technology")).map((c) => {
         return(<Block2
-          // ids={c.id}
+          id={c.id}
           img={c.image}
           title={c.title}
           description={c.description}

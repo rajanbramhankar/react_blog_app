@@ -2,7 +2,8 @@ import React, { useContext } from 'react'
 import Blockhome from '../Blocks/Blockhome'
 import Block2 from '../Blocks/Block2'
 import Blocktoppost from '../Blocks/Blocktoppost'
-import { store } from './Detail'                   
+import { store } from './Detail'     
+import { Link } from 'react-router-dom'              
 
 const Home = () => {
   const [response] = useContext(store)
@@ -11,18 +12,17 @@ const Home = () => {
       <div className='home_top'>
 
         {response.filter((e) => (e.category === "Tourism" && e.id === "god")).map((c) => {
-          return (<img className='top_img_home' src={c.image} />)
+          return (<Link to='/Tourism'><img className='top_img_home' src={c.image}  alt=""  /></Link>)
         })
         }
         <div className='Extra_div_home'>
           {response.filter((e) => (e.category === "Sports" && e.id === "35")).map((c) => {
-            return (<img className='top_img_home_1' src={c.image} />
+            return (<Link to='/Sport'><img className='top_img_home_1' src={c.image} alt="" /></Link>
             )
           })
           }
           {response.filter((e) => (e.category === "Technology" && e.id === "27")).map((c) => {
-            return (<img className='top_img_home_1' src={c.image}
-            />)
+            return (<Link to='/Technology'><img className='top_img_home_1' src={c.image} alt="" /></Link>)
           })
           }
         </div>
@@ -36,20 +36,20 @@ const Home = () => {
         <div>
           {response.filter((e) => (e.id === "12")).map((c) => {
             return (<Blockhome
-              // ids={c.id}
+              id={c.id}
               img={c.image}
               title={c.title}
               description={c.description}
               date={c.date}
               category={c.category}
-            />)
+            /> )
           })
           }
         </div>
         <div>
           {response.filter((e) => (e.id === "37")).map((c) => {
             return (<Blockhome
-              // ids={c.id}
+              id={c.id}
               img={c.image}
               title={c.title}
               description={c.description}
@@ -62,7 +62,7 @@ const Home = () => {
         <div>
           {response.filter((e) => (e.id === "8")).map((c) => {
             return (<Blockhome
-              // ids={c.id}
+              id={c.id}
               img={c.image}
               title={c.title}
               description={c.description}
@@ -81,7 +81,7 @@ const Home = () => {
 
         {response.filter((e) => (e.category === "Tourism" && e.id === '47' )).map((c) => {
           return (<Block2
-            // ids={c.id}
+            id={c.id}
             img={c.image}
             title={c.title}
             description={c.description}
@@ -91,7 +91,7 @@ const Home = () => {
         }
         {response.filter((e) => (e.category === "Technology" && e.id === '23' )).map((c) => {
           return (<Block2
-            // ids={c.id}
+            id={c.id}
             img={c.image}
             title={c.title}
             description={c.description}
@@ -101,7 +101,7 @@ const Home = () => {
         }
         {response.filter((e) => (e.category === "Health" && e.id === '22' )).map((c) => {
           return (<Block2
-            // ids={c.id}
+            id={c.id}
             img={c.image}
             title={c.title}
             description={c.description}
@@ -111,7 +111,7 @@ const Home = () => {
         }
         {response.filter((e) => (e.category === "Tourism" && e.id === '40' )).map((c) => {
           return (<Block2
-            // ids={c.id}
+            id={c.id}
             img={c.image}
             title={c.title}
             description={c.description}
@@ -121,7 +121,7 @@ const Home = () => {
         }
         {response.filter((e) => (e.category === "Bollywood" && e.id === '9' )).map((c) => {
           return (<Block2
-            // ids={c.id}
+            id={c.id}
             img={c.image}
             title={c.title}
             description={c.description}
@@ -199,7 +199,7 @@ const Home = () => {
         <div>
           {response.filter((e) => (e.id === "12")).map((c) => {
             return (<Blockhome
-              // ids={c.id}
+              id={c.id}
               img={c.image}
               title={c.title}
               description={c.description}
@@ -212,7 +212,7 @@ const Home = () => {
         <div>
           {response.filter((e) => (e.id === "37")).map((c) => {
             return (<Blockhome
-              // ids={c.id}
+              id={c.id}
               img={c.image}
               title={c.title}
               description={c.description}
@@ -225,7 +225,7 @@ const Home = () => {
         <div>
           {response.filter((e) => (e.id === "8")).map((c) => {
             return (<Blockhome
-              // ids={c.id}
+              id={c.id}
               img={c.image}
               title={c.title}
               description={c.description}

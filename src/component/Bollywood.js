@@ -15,7 +15,7 @@ const Bollywood = () => {
 
         {response.filter((e) => (e.category === "Bollywood")).map((c) => {
           return (<Blockbollywood
-            // ids={c.id}
+            id={c.id}
             img={c.image}
             title={c.title}
             description={c.description}
@@ -33,6 +33,7 @@ const Bollywood = () => {
             return (<Blocktoppost
               img={c.image}
               title={c.title}
+              category={c.category}
             />)
           })
           }

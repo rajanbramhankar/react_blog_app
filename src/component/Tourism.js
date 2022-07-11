@@ -13,7 +13,7 @@ const Tourism = () => {
    
    {response.filter((e)=> (e.category === "Tourism")).map((c) => {
         return(<Block2
-          // ids={c.id}
+          id={c.id}
           img={c.image}
           title={c.title}
           description={c.description}

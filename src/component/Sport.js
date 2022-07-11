@@ -13,7 +13,7 @@ const Hollywood = () => {
     
     {response.filter((e)=> (e.category === "Sports")).map((c) => {
         return(<Block2
-          // ids={c.id}
+          id={c.id}
           img={c.image}
           title={c.title}
           description={c.description}

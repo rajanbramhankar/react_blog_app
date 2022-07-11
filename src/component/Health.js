@@ -12,7 +12,7 @@ const Health = () => {
          <h1 className='heading_tourism' >Health</h1>
       {response.filter((e)=> (e.category === "Health")).map((c) => {
         return(<Block2
-          // ids={c.id}
+          id={c.id}
           img={c.image}
           title={c.title}
           description={c.description}
