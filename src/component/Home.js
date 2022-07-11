@@ -12,17 +12,29 @@ const Home = () => {
       <div className='home_top'>
 
         {response.filter((e) => (e.category === "Tourism" && e.id === "god")).map((c) => {
+<<<<<<< HEAD
           return (<Link to='/Tourism'><img className='top_img_home' src={c.image}  alt=""  /></Link>)
+=======
+          return (<img className='top_img_home' src={c.image}  alt=""  />)
+>>>>>>> 55b163425e3436c2f097465f9589b424a44aaa1a
         })
         }
         <div className='Extra_div_home'>
           {response.filter((e) => (e.category === "Sports" && e.id === "35")).map((c) => {
+<<<<<<< HEAD
             return (<Link to='/Sport'><img className='top_img_home_1' src={c.image} alt="" /></Link>
+=======
+            return (<img className='top_img_home_1' src={c.image} alt="" />
+>>>>>>> 55b163425e3436c2f097465f9589b424a44aaa1a
             )
           })
           }
           {response.filter((e) => (e.category === "Technology" && e.id === "27")).map((c) => {
+<<<<<<< HEAD
             return (<Link to='/Technology'><img className='top_img_home_1' src={c.image} alt="" /></Link>)
+=======
+            return (<img className='top_img_home_1' src={c.image} alt="" />)
+>>>>>>> 55b163425e3436c2f097465f9589b424a44aaa1a
           })
           }
         </div>
