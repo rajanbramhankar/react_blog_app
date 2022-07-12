@@ -7,7 +7,7 @@ const Blockhome = (props) => {
   const { img, description, title, category, id } = props;
   return (
 
-    <Link to={`${category}/${id}`} state={{ img: img, category: category, id: id, description: description, title: title }} >
+    <Link to={`/${category}/${id}`} state={{ img: img, category: category, id: id, description: description, title: title }} >
 
       <div className='block_home_middle_container' >
         <img className='block_home_img_middle' src={img} alt='not found' />

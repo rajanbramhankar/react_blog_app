@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 const Blocktoppost = (props) => {
     const { img,  title ,category,id }=props;
   return (
-    <Link to={`${category}/${id}` } state={{img:img,id:id,title:title}} >
+    <Link to={`/${category}/${id}` } state={{img:img,id:id,title:title}} >
         
           <div className='block_home' >
            

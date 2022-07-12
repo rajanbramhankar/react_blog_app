@@ -6,7 +6,7 @@ const Block2 = (props) => {
     const { img, description, title, category,id}=props;
   return (
     
-         <Link to={`${category}/${id}` } state={{img:img,category:category, description:description,title:title,id:id}} >
+         <Link to={`/${category}/${id}` } state={{img:img,category:category, description:description,title:title,id:id}} >
         
         
          <div className='block_home' >
